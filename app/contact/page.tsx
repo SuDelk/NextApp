@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Contact() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -9,6 +11,13 @@ export default function Contact() {
           This is the Contact Us page of our application. Feel free to reach out
           to us for any inquiries or support.
         </p>
+        <Image
+          src="https://iucn.org/sites/default/files/2025-08/reticulated-giraffe-giraffa-reticulata_kenya-laikipia-plateau_copyrightmichaelbrown.jpg"
+          alt="Contact Us"
+          width={600}
+          height={400}
+          className="mt-8 rounded-lg shadow-lg"
+        />
       </main>
     </div>
   );
