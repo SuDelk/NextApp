@@ -1,7 +1,13 @@
 import Image from "next/image";
 
-export default function Contact() {
+export default async function Contact() {
   console.log("Contact page loaded");
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+    cache: "no-store", // to disable caching and always fetch fresh data
+  });
+  const data = await response.json();
+  console.log("Fetched data:", data); // log first two items for brevity
+
   /* Upside of server side rendering
    * SEO friendly
    * Faster initial load
