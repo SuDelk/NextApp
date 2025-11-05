@@ -1,7 +1,24 @@
 import Image from "next/image";
 
 export default function Contact() {
-    console.log("Contact page loaded");
+  console.log("Contact page loaded");
+  /* Upside of server side rendering
+   * SEO friendly
+   * Faster initial load
+   * Easier to implement (no need for client side state management  or hooks
+   * Better for static content
+   * Easier to secure (no client side code exposure)
+   * Better for accessibility
+   * Easier to maintain
+   * Better for performance on low end devices
+   * Easier to cache and optimize
+   * Reduces client side javascript bundle size
+   * Easier to implement internationalization (i18n)
+   * Better for content that doesn't change often
+   * Easier to implement analytics and tracking
+   * Better for web crawlers and bots
+   * Easier to implement server side logic and data fetching
+   */
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-center py-32 px-16 bg-white dark:bg-black sm:items-start">
