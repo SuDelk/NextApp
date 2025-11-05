@@ -7,7 +7,7 @@ export default async function Contact() {
     cache: "no-store", // to disable caching and always fetch fresh data
   });
   const data = await response.json();
-  console.log("Fetched data:", data); // log first two items for brevity
+  console.log("Fetched data:", data.slice(0,2)); // log first two items for brevity
 
   /* Upside of server side rendering
    * SEO friendly
