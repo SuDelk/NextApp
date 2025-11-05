@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ButtonComponent from "./ButtonComponent";
 
 export default async function Contact() {
   console.log("Contact page loaded");
@@ -35,6 +36,7 @@ export default async function Contact() {
           This is the Contact Us page of our application. Feel free to reach out
           to us for any inquiries or support.
         </p>
+        <ButtonComponent title={data[0].title}/>
         <Image
           src="https://iucn.org/sites/default/files/2025-08/reticulated-giraffe-giraffa-reticulata_kenya-laikipia-plateau_copyrightmichaelbrown.jpg"
           alt="Contact Us"
